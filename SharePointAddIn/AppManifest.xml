@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="SharePointAddIn_ASPNETCore"
+     ProductID="{4c310dc7-9ceb-403b-97d5-6e0fea991dfe}"
+     Version="1.0.0.0"
+     SharePointMinVersion="16.0.0.0"
+>
+  <Properties>
+    <Title>SharePointAddIn - ASP.NET Core</Title>
+    <StartPage>https://localhost:44316/?{StandardTokens}</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <RemoteWebApplication ClientId="2dce90c0-cb3d-44d4-8fad-a3d888d9641f" />
+  </AppPrincipal>
+
+	<AppPermissionRequests AllowAppOnlyPolicy="true">
+		<AppPermissionRequest Scope="http://sharepoint/content/sitecollection" Right="FullControl" />
+	</AppPermissionRequests>
+
+</App>
